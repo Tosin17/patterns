@@ -3,10 +3,9 @@ export class Task {
     private completed: boolean = false;
     constructor(name: string, status?: boolean) {
         this.name = name;
-        this.completed = status;
+        this.completed = status || false;
     }
     complete() {
         this.completed = !this.completed;
-        console.log(this.completed)
     }
 }
