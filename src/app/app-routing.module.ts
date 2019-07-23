@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ConstructorComponent } from './constructor/constructor.component';
+import { TaskComponent } from './constructor/task.component';
 
 
 const routes: Routes = [
-  { path: '', component: ConstructorComponent }
+  { path: '', component: TaskComponent }
 ];
 
 @NgModule({
