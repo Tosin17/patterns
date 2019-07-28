@@ -1,1 +1,13 @@
-<p>factory works!</p>
+<h1>Game Charcters</h1>
+<h5>Select a fighter group</h5>
+
+<div>
+    <select name="fighterGrp">
+        <option value="ninja">Ninjas</option>
+        <option value="wrestler">Wrestlers</option>
+        <option value="soldier">Soldiers</option>
+    </select>
+    <div class="description">
+        {{ fighterGroup | json }}
+    </div>
+</div>

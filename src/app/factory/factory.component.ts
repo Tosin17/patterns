@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FactoryService } from '../services/factory.service';
 
 @Component({
   selector: 'app-factory',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./factory.component.scss']
 })
 export class FactoryComponent implements OnInit {
+  fighterGroup = { test: 'test' };
 
-  constructor() { }
+  constructor(private fightersService: FactoryService) {
+    console.log(this.fightersService.getFighterGroups());
+  }
 
   ngOnInit() {
   }
