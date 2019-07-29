@@ -8,6 +8,8 @@ import { FactoryComponent } from './factory/factory.component';
 import { SingletonComponent } from './singleton/singleton.component';
 import { DecoratorComponent } from './decorator/decorator.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,10 @@ import { FileUploadComponent } from './file-upload/file-upload.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

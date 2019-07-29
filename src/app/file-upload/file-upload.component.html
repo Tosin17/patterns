@@ -1,8 +1,12 @@
-<form novalidate>
+<form [formGroup]="fileForm"
+      (submit)="onSubmit()"
+      novalidate>
     <p><input type="text"
                name="username"></p>
     <p><input type="file"
                name="file"
+               (change)="onFileChange($event.target.files[0])"
                id="file"></p>
+    <button type="submit">Submit</button>
     <div class="content"></div>
 </form>
