@@ -7,6 +7,7 @@ import { TaskComponent } from './constructor/task.component';
 import { FactoryComponent } from './factory/factory.component';
 import { SingletonComponent } from './singleton/singleton.component';
 import { DecoratorComponent } from './decorator/decorator.component';
+import { FileUploadComponent } from './file-upload/file-upload.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DecoratorComponent } from './decorator/decorator.component';
     TaskComponent,
     FactoryComponent,
     SingletonComponent,
-    DecoratorComponent
+    DecoratorComponent,
+    FileUploadComponent
   ],
   imports: [
     BrowserModule,
